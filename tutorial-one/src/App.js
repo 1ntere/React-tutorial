@@ -15,12 +15,17 @@ import [여기서 사용할 이름] from 'jacascript파일경로/javascript파�
 예시
 R01_ClassComponent.js를 가져와서 R01이라는 별칭을 사용해서 App.js에 적용
 */
-//import R01 from './R01_ClassComponent.js';
-//import R02 from './R02_FunctionComponent.js';
+import R01 from './R01_ClassComponent.js';
+import R02 from './R02_FunctionComponent.js';
 import Props1 from "./R03_Prop.js"
 import Props2 from "./R04_Props2.js"
 import Props3 from "./R05실습_Props3.js"
-
+import 예제1번 from './R06_State1.js'; //'' 와 "" 는 크게 상관 없음
+import 예제2번 from './R07_State2.js';
+import 예제3번 from './R08_State3.js';
+import 예제4번 from './R09_State4.js';
+import 예제5번 from './R10_State5.js';
+import 예제6번 from './R11_State6.js';
 function App() {
   return (
     /*
@@ -31,13 +36,14 @@ function App() {
       {/ * * /}  -> 주로 코드를 주석처리할 때 사용
     */
     <div className="App-header">
-      {/*<R01/>*/}
-      {/*<p>--------------------</p>*/}
-      {/*<R02/>*/}
+      <R01/>
+      <p>--------------------</p>
+      <R02/>
+      <p>--------------------</p>
       <Props1 num='1' name='홍길동' age='20' score='90'/>
       <Props1 num='2' name='홍길은' age='30' score='80'/>
       <Props1 num='3' name='홍길금' age='40' score='70'/>
-
+      <p>--------------------</p>
       <h3>Props 예제 2번 사용하기</h3>
       <Props2 name='강감찬' age='72' gender='남자'/>
       {/*
@@ -48,9 +54,23 @@ function App() {
         이름 : 강감찬 / 나이 : 72 / 성별 : 남자
       </div>
       */}
-
+      <p>--------------------</p>
       <h3>Props 실습 3번 사용하기</h3>
       <Props3 num='5' name='김연정' age='40' gender='여자' phone='010-1111-2222'/>
+      <p>--------------------</p>
+      <예제1번/>
+      <p>--------------------</p>
+      <예제2번/>
+      <p>--------------------</p>
+      <예제3번 init="50" step="10"/>
+           {/* init : 처음에 시작할 숫자 값 */}
+                     {/* step : 몇 씩 숫자가 커지고 작아질 것인지 */}
+      <p>--------------------</p>
+      <예제4번 init="40" years="1"/>
+      <p>--------------------</p>
+      <예제5번/>
+      <p>--------------------</p>
+      <예제6번/>
     </div>
   );
 }
