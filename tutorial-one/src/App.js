@@ -15,17 +15,22 @@ import [여기서 사용할 이름] from 'jacascript파일경로/javascript파�
 예시
 R01_ClassComponent.js를 가져와서 R01이라는 별칭을 사용해서 App.js에 적용
 */
-import R01 from './R01_ClassComponent.js';
-import R02 from './R02_FunctionComponent.js';
-import Props1 from "./R03_Prop.js"
-import Props2 from "./R04_Props2.js"
-import Props3 from "./R05실습_Props3.js"
-import 예제1번 from './R06_State1.js'; //'' 와 "" 는 크게 상관 없음
-import 예제2번 from './R07_State2.js';
-import 예제3번 from './R08_State3.js';
-import 예제4번 from './R09_State4.js';
-import 예제5번 from './R10_State5.js';
-import 예제6번 from './R11_State6.js';
+import R01 from './component/R01_ClassComponent.js';
+import R02 from './component/R02_FunctionComponent.js';
+import Props1 from "./component/R03_Prop.js"
+import Props2 from "./component/R04_Props2.js"
+import Props3 from "./component/R05실습_Props3.js"
+import 예제1번 from './component/R06_State1.js'; //'' 와 "" 는 크게 상관 없음
+import 예제2번 from './component/R07_State2.js';
+import 예제3번 from './component/R08_State3.js';
+import 예제4번 from './component/R09_State4.js';
+import 예제5번 from './component/R10_State5.js';
+import 예제6번 from './component/R11_State6.js';
+import 컨텍스트1 from './component/R12_Context1.js';
+import 부트스트랩1 from './component/R14_Bootstrap.js';
+import 컨텍스트2 from './component/R13_Context2.js';
+import 컨텍스트3 from './component/R15_Context3/Parent.js';
+import 멤버가입 from './component/R16_Context4/최종출력공간.js';
 function App() {
   return (
     /*
@@ -71,6 +76,16 @@ function App() {
       <예제5번/>
       <p>--------------------</p>
       <예제6번/>
+      <p>--------------------</p>
+      <컨텍스트1/>
+      <p>--------------------</p>
+      <부트스트랩1/>
+      <p>--------------------</p>
+      <컨텍스트2/>
+      <p>--------------------</p>
+      <컨텍스트3/>
+      <p>--------------------</p>
+      <멤버가입/>
     </div>
   );
 }
