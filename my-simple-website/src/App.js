@@ -1,27 +1,23 @@
 import './App.css';
+import Home from './component/Home';
 import Game from './component/Game';
 import Game2 from './component/GameTwoStep';
+import {Route, Routes} from "react-router-dom";
+import NavBar from './component/Navbar';
+import Header from './component/Header';
+import TodoList from './component/TodoList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>홈페이지에 오신 것을 환영합니다.</h1>
-        <Game/>
-        <Game2/>
-      </header>
-      <main>
-        <section>
-          <h2>about us</h2>
-          <p>이 홈페이지는 간단한 리액트 홈페이지 입니다.</p>
-
-        </section>
-        <h2>Contact Us</h2>
-        <p>Email : contact@email.com</p>
-      </main>
-      <footer>
-        <p>&copy; 2024 My Website</p>
-      </footer>
+    <div>
+      <Header/>
+      <NavBar/>
+      <Routes> {/* 링크 모음 - 예전에는 Switch라고 작성했지만 v6부터 Routes 사용 */}
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/game" element={<Game/>}></Route>
+        <Route path="/game-twoStep" element={<Game2/>}></Route>
+        <Route path="/todolist" element={<TodoList/>}></Route>
+      </Routes>
     </div>
   );
 }

@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 const Game2 = () => {
     const [guess, setGuess] = useState('');
     const [message, setMessage] = useState('');
     const [number, setNumber] = useState(Math.floor(Math.random() * 30) + 1);
     const [attempts, setAttempts] = useState(0);
+    const [isCorrect, setIsCorrect] = useState(false);
 
     const handleChange = (e) => {
         setGuess(e.target.value);
@@ -17,6 +19,7 @@ const Game2 = () => {
 
         if (userGuess === number) {
             setMessage('축하합니다. 맞추셨습니다.');
+            setIsCorrect(true);
         } else if (userGuess > number) {
             setMessage('Down!');
         } else {
@@ -31,17 +34,21 @@ const Game2 = () => {
         setMessage('');
         setNumber(Math.floor(Math.random() * 30) + 1);
         setAttempts(0);
+        setIsCorrect(false);
     }
 
     return (
         <div>
-            <h1>UP & DOWN 게임</h1>
+            <h1>UP & DOWN 게임 2단계</h1>
             <form onSubmit={handleSubmit}>
                 <input type='number' value={guess} onChange={handleChange} placeholder='1에서 30사이의 숫자 입력하기'/>
                 <button type='submit'>정답 제출하기</button>
             </form>
             <p>{message}</p>
-            <button onClick={handleRestart}>재시작버튼</button>
+            {isCorrect ? 
+                            (<Link to="/game"><button>처음으로 돌아가기</button></Link>)
+                       :
+                            (<button onClick={handleRestart}>재시작버튼</button>)}
         </div>
     )
 }

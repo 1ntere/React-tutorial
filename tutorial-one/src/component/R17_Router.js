@@ -43,7 +43,4 @@ BrowserRouter는 index.js나 App.js에서 사용
 
 만약에 App.js를 index.js 바로 아래에서 사용하지 않는다면
 index.js의 바로 아래에서 표현되는 js파일에서 표기될 것임
-
-
-
 */
