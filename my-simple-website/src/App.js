@@ -6,6 +6,8 @@ import {Route, Routes} from "react-router-dom";
 import NavBar from './component/Navbar';
 import Header from './component/Header';
 import TodoList from './component/TodoList';
+import TicTacToe from './component/TicTacToe';
+import TicTacToeTwoStep from './component/TicTacToeTwoStep';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/game" element={<Game/>}></Route>
         <Route path="/game-twoStep" element={<Game2/>}></Route>
         <Route path="/todolist" element={<TodoList/>}></Route>
+        <Route path="/tictactoe" element={<TicTacToe/>}></Route>
+        <Route path="/tictactoetwostep" element={<TicTacToeTwoStep/>}></Route>
       </Routes>
     </div>
   );

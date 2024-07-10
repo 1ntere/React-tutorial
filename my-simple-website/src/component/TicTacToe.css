@@ -1,0 +1,44 @@
+.tictactoe-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+.tictactoe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+                               /* 3 : 한 줄 당 3개씩 보이게 설정 */
+    grid-gap: 10px;/* 격자에 틈을 10px 만큼 위 아래로 준 것 */
+    justify-content: center;/* 내용물을 모두 가운데로 모이게 하기 */
+}
+
+.tictactoe-button {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.tictactoe-button:hover {
+    background-color: #09ac0e67;
+}
+
+.restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+  
+.restart-button:hover {
+    background-color: #e53935;
+}
