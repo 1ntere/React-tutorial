@@ -69,7 +69,9 @@ const TicTacToe = () => {
             <p>{message}</p>
             {isCorrect
                         ?
-                            (<Link to="/tictactoetwostep"><button>다음 단계로 이동</button></Link>)
+                            (<Link to="/tictactoetwostep">
+                                <button className="nextStep-button">다음 단계로 이동</button>
+                            </Link>)
                         : 
                             (<button className="restart-button"
                                      onClick={재시작버튼}>게임 재시작</button>)}

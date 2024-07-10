@@ -50,7 +50,9 @@ const TicTacToeTwoStep = () => {
             <p>{message}</p>
             {isCorrect
                         ?
-                            (<Link to="/tictactoe"><button>이전 단계로 이동</button></Link>)
+                            (<Link to="/tictactoe">
+                                <button className="previousStep-button">이전 단계로 이동</button>
+                            </Link>)
                         : 
                             (<button className="restarttwostep-button"
                                      onClick={재시작버튼}>게임 재시작</button>)}
