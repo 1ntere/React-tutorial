@@ -22,11 +22,12 @@ const Axios_Ex1 = () => {
 
     return (
         <>
-            <h1>버튼을 클릭하면 json 안에 작성된 내용 가져오기</h1>
+            <h1>버튼을 클릭하면 JSON 안에 작성된 내용 가져오기</h1>
             <button onClick={불러오기버튼}>불러오기</button>
             <br/>
             {data && <textarea rows={20} cols={80}
-                               value={JSON.stringify(data, null, 2)} readOnly={true} />}
+                               value={JSON.stringify(data, null, 2)}
+                               readOnly={true}/>}
         </>
     )
 }
