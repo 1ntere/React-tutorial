@@ -31,6 +31,14 @@ import 부트스트랩1 from './component/R14_Bootstrap.js';
 import 컨텍스트2 from './component/R13_Context2.js';
 import 컨텍스트3 from './component/R15_Context3/Parent.js';
 import 멤버가입 from './component/R16_Context4/최종출력공간.js';
+
+
+import Ref예제3번 from './component/R21_useRefSignUp.js';
+//Ref예제4번 -> {RefEx as Ref예제4번}
+import {RefEx as Ref예제4번} from './component/R22_useRefEx.js';
+import Dodgegobelin from './component/R23_Dodgegobelin/Dodgegobelin.js';
+import Axios예제1번 from './component/R25_Axios_Ex1.js';
+import Axios예제2번 from './component/R26_Axios_Ex2.js';
 function App() {
   return (
     /*
@@ -86,6 +94,21 @@ function App() {
       <컨텍스트3/>
       <p>--------------------</p>
       <멤버가입/>
+
+
+
+
+
+      <p>--------------------</p>
+      <Ref예제3번/>
+      <p>--------------------</p>
+      <Ref예제4번/>
+      <p>--------------------</p>
+      <Dodgegobelin/>
+      <p>--------------------</p>
+      <Axios예제1번/>
+      <p>--------------------</p>
+      <Axios예제2번/>
     </div>
   );
 }
