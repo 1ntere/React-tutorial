@@ -1,0 +1,28 @@
+.album-container {
+    text-align: center;
+}
+.album-content {
+    display: flex;
+           /* flex : 한 줄 정렬 */
+    flex-wrap: wrap;
+ /* flex-wrap: wrap; : div 태그 안에서 몇 줄이 되어도 상관없이
+                       여러 줄에 걸쳐 자동으로 줄바꿈이 되도록 설정하는 것 */
+    justify-content: center;
+}
+.album {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px #ddd;
+}
+.album img {
+    width: 100%;
+        /* 100% : 이미지가 movie 클래스 크기만큼 100% 설정 */
+    border-radius: 5px;
+}
+.album h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
