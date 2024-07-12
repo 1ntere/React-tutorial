@@ -41,8 +41,9 @@ import Axios예제1번 from './component/R25_Axios_Ex1.js';
 import Axios예제2번 from './component/R26_Axios_Ex2.js';
 import Fetch예제1번 from './component/R28_Fetch_ex.js';
 import Fetch예제2번 from './component/R29_Fetch_ex2.js';
-import Board from './component/R31_PageNation/Board.js';
-import Album from './component/R31_PagiNationEx/Album.js';
+import Board from './component/R31_PagiNation/Board.js';
+import Album from './component/R32_PagiNationEx/Album.js';
+import Profile from './component/R34_Profile.js';
 function App() {
   return (
     /*
@@ -115,6 +116,7 @@ function App() {
       에러가 있음
       <p>--------------------</p>
       <Axios예제2번/>*/}
+
       {/*
       <p>--------------------</p>
       <Fetch예제1번/>
@@ -125,7 +127,10 @@ function App() {
       {/*
       <Board/>
       */}
+      {/*
       <Album/>
+       */}
+      <Profile/>
     </div>
   );
 }

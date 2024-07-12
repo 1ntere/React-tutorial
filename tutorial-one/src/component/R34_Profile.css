@@ -1,0 +1,26 @@
+.profile-container {
+    text-align: center;
+    margin-top: 50px;
+}
+input {
+    margin: 20px;
+    display: none;
+}
+label {
+    background-color: antiquewhite;
+    padding: 6px 12px;
+          /* 6px 12px :  두 번째 설정은 첫 번째 설정 * 2로 하면 보통 비율이 좋게 나옴 */
+    color: white;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+}
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    padding: 5px;
+    margin-top: 20px;
+}
