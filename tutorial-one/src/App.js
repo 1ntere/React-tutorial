@@ -39,6 +39,10 @@ import {RefEx as Ref예제4번} from './component/R22_useRefEx.js';
 import Dodgegobelin from './component/R23_Dodgegobelin/Dodgegobelin.js';
 import Axios예제1번 from './component/R25_Axios_Ex1.js';
 import Axios예제2번 from './component/R26_Axios_Ex2.js';
+import Fetch예제1번 from './component/R28_Fetch_ex.js';
+import Fetch예제2번 from './component/R29_Fetch_ex2.js';
+import Board from './component/R31_PageNation/Board.js';
+import Album from './component/R31_PagiNationEx/Album.js';
 function App() {
   return (
     /*
@@ -49,7 +53,7 @@ function App() {
       {/ * * /}  -> 주로 코드를 주석처리할 때 사용
     */
     <div className="App-header">
-      <R01/>
+      {/*<R01/>
       <p>--------------------</p>
       <R02/>
       <p>--------------------</p>
@@ -58,7 +62,7 @@ function App() {
       <Props1 num='3' name='홍길금' age='40' score='70'/>
       <p>--------------------</p>
       <h3>Props 예제 2번 사용하기</h3>
-      <Props2 name='강감찬' age='72' gender='남자'/>
+      <Props2 name='강감찬' age='72' gender='남자'/>*/}
       {/*
       <Props2 name='강감찬' age='72' gender='남자'/>
       Props2 객체는 아래와 같은 코드를 한 줄로 작성하기 위해 가져온 이름
@@ -67,7 +71,7 @@ function App() {
         이름 : 강감찬 / 나이 : 72 / 성별 : 남자
       </div>
       */}
-      <p>--------------------</p>
+      {/*<p>--------------------</p>
       <h3>Props 실습 3번 사용하기</h3>
       <Props3 num='5' name='김연정' age='40' gender='여자' phone='010-1111-2222'/>
       <p>--------------------</p>
@@ -75,10 +79,10 @@ function App() {
       <p>--------------------</p>
       <예제2번/>
       <p>--------------------</p>
-      <예제3번 init="50" step="10"/>
+      <예제3번 init="50" step="10"/>*/}
            {/* init : 처음에 시작할 숫자 값 */}
                      {/* step : 몇 씩 숫자가 커지고 작아질 것인지 */}
-      <p>--------------------</p>
+      {/*<p>--------------------</p>
       <예제4번 init="40" years="1"/>
       <p>--------------------</p>
       <예제5번/>
@@ -106,9 +110,22 @@ function App() {
       <p>--------------------</p>
       <Dodgegobelin/>
       <p>--------------------</p>
-      <Axios예제1번/>
+      <Axios예제1번/>*/}
+      {/*
+      에러가 있음
       <p>--------------------</p>
-      <Axios예제2번/>
+      <Axios예제2번/>*/}
+      {/*
+      <p>--------------------</p>
+      <Fetch예제1번/>
+      <p>--------------------</p>
+      <Fetch예제2번/>
+      <p>--------------------</p>
+      */}
+      {/*
+      <Board/>
+      */}
+      <Album/>
     </div>
   );
 }
