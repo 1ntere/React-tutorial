@@ -8,6 +8,7 @@ import Header from './component/Header';
 import TodoList from './component/TodoList';
 import TicTacToe from './component/TicTacToe';
 import TicTacToeTwoStep from './component/TicTacToeTwoStep';
+import MovieRating from './component/Movie/MovieGrade';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/todolist" element={<TodoList/>}></Route>
         <Route path="/tictactoe" element={<TicTacToe/>}></Route>
         <Route path="/tictactoetwostep" element={<TicTacToeTwoStep/>}></Route>
+        <Route path="/movieRate" element={<MovieRating/>}></Route>
       </Routes>
     </div>
   );
