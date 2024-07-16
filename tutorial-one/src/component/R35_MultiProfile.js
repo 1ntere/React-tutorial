@@ -20,7 +20,6 @@ const 멀티프로필 =() => {
         }
       };
     
-    }
     return (
         <div className="profile-container">
             <h1>프로필 사진 변경</h1>
