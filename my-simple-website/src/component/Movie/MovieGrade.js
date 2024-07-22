@@ -47,7 +47,7 @@ const MovieRating = () => {
 
     return (
         <div className="movie-container">
-            <h1>평점 좋은 영화들</h1>
+            <h1>🎞 평점 좋은 영화들 🎞</h1>
             <div className="movie-content">
                 {영화들.map(영화 => (
                     <div key={영화.id} className="movie">

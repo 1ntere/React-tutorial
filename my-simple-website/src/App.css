@@ -61,3 +61,43 @@ nav ul li a:hover {
   background-color: #575757;
   border-radius: 4px;
 }
+
+/***** Footer Css *****/
+.footer {
+  background-color: #333;
+  /* 
+  색상 코드 : 1로 갈 수록 검정, f로 갈수록 흰색
+  #111 ~ #111111 : 검정 계열
+  #fff ~ #ffffff : 흰색 계열
+  */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import {Link} from 'react-router-dom';
-import './TicTacToe.css';
+import '../TicTacToe.css';
+      //../  : 현재 폴더를 감싸고 있는 상위 폴더에서 다른 파일을 가지고 오는 것
+      //./   : 현재 폴더에서 가져온 파일, 동일한 폴더 위치에서 다른 파일을 가지고 오는 것
+      //TicTacToe.js : src/component/TicTacToe/TicTacToe.js
+      //TicTacToe.css : src/component/TicTacToe.css
 
 const 배열랜덤섞기 = (배열) => {
     return 배열.sort(() => Math.random() - 0.5);

@@ -2,6 +2,7 @@
     text-align: center;
 }
 .movie-content {
+    margin-bottom: 100px;
     display: flex;
            /* flex : 한 줄 정렬 */
     flex-wrap: wrap;
