@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import UserList from './UserList';
+//import UserList from './UserList';
 import reportWebVitals from './reportWebVitals';
-import TodoList from './TodoList';
+//import TodoList from './TodoList';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
